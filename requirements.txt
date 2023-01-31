@@ -1,0 +1,49 @@
+mlflow-env-setup
+Installing Anaconda
+*. Download anaconda from (Anaconda.com)
+*. Open it from downloads, copy complete filename (including .sh) and open terminal there.
+*. Use the command: bash 'paste the copied filename', hit Enter
+*. Hit enter countinusely upto when terminal arises to select 'yes or no', yes to continue.
+*. Preceeded the by permitting location and permitting to conda init by giving 'yes'.
+*. After successfull download, close all windows including terminal.
+*. Open terminal and use the command: anaconda-navigator and hit Enter, to open anaconda navigator.
+
+In some situatons we have to download the dependencies. Follow, (https://www.addictivetips.com/ubuntu-linux-tips/how-to-install-anaconda-on-ubuntu/) even any such issues persists.
+
+Installing tensorflow
+*. Open terminal and use the command: sudo apt-get install python3(skip if python3 already exists)
+*. Then download pip by using the command : sudo apt-get install python3-pip.
+*. To install tensorflow in ubuntu, pip3 install tensorflow
+*. after downloading tensorflow, check it by using any sample program.
+
+Handling errors
+AttributeError: module 'numpy' has no attribute 'typeDict'
+*. Use the command: pip install numpy==1.21 to solve this type of attribute error.
+
+ModuleNotFoundError in using opencv
+👇️ in a virtual environment or using Python 2
+pip install opencv-python
+
+👇️ for python 3 (could also be pip3.10 depending on your version)
+pip3 install opencv-python
+
+👇️ if you get permissions error
+sudo pip3 install opencv-python pip install opencv-python --user
+
+👇️ if you don't have pip in your PATH environment variable
+python -m pip install opencv-python
+
+👇️ for python 3 (could also be pip3.10 depending on your version)
+python3 -m pip install opencv-python
+
+👇️ using py alias (Windows)
+py -m pip install opencv-python
+
+👇️ for Anaconda
+conda install -c conda-forge opencv
+
+👇️ for Jupyter Notebook
+!pip install opencv-python
+
+All other required libraries can be installed using 'pip install..'.
+matplotlib, numpy, PIL, pathlib are pip installed and all other packages are built-in supportives of mlflow and tensorflow are available by importing them. Eg:import mlflow.pyfunc
