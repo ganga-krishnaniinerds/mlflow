@@ -1,5 +1,7 @@
-# mlflow-env-setup
+mlflow-env-setup
+
 Installing Anaconda
+
 *. Download anaconda from (Anaconda.com)
 *. Open it from downloads, copy complete filename (including .sh) and open terminal there.
 *. Use the command: bash 'paste the copied filename', hit Enter
