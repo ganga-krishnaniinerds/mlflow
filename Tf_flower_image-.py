@@ -11,7 +11,7 @@ from tensorflow.keras.models import Sequential
 import mlflow
 import mlflow.sklearn
 
-mlflow.set_experiment("Tf-flower_image1")
+mlflow.set_experiment("Tf-flower_image")
 mlflow.set_tag("mlflow.runName", "run_1")
 
 import pathlib
