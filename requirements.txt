@@ -49,3 +49,5 @@ conda install -c conda-forge opencv
 
 All other required libraries can be installed using 'pip install..'.
 matplotlib, numpy, PIL, pathlib are pip installed and all other packages are built-in supportives of mlflow and tensorflow are available by importing them. Eg:import mlflow.pyfunc
+
+*. Running the mlflow server failed, use the command : sudo fuser -k 5000/tcp
